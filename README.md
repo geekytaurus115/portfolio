@@ -9,7 +9,7 @@ You can see how it looks here: [geekytaurus.vercel.app](https://geekytaurus.verc
 
 
 
-⭐ If you like this project, don’t forget to give it a star!
+⭐ If you like this project, don’t forget to give it a star! <br/>
 Your support motivates me to build more awesome projects ❤️
 
 
