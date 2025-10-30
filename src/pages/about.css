@@ -1,0 +1,1210 @@
+/* Journey Page Container */
+.journey-page {
+  min-height: 100vh;
+  padding: 120px 40px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Journey Header */
+.journey-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.journey-title {
+  font-family: 'Figtree', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.journey-subtitle {
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Journey Content */
+.journey-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Terminal Cards */
+.terminal-card {
+  background: linear-gradient(145deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.terminal-card:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 15px 50px rgba(56, 189, 248, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Terminal Header */
+.terminal-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.btn-close {
+  background: #f87171;
+}
+
+.btn-minimize {
+  background: #facc15;
+}
+
+.btn-maximize {
+  background: #22c55e;
+}
+
+.terminal-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Terminal Body */
+.terminal-body {
+  padding: 25px;
+  font-family: 'Fira Code', monospace;
+}
+
+.terminal-line {
+  margin-bottom: 15px;
+}
+
+.terminal-prompt {
+  color: #22c55e;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.terminal-command {
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+.terminal-output {
+  padding-left: 25px;
+}
+
+.output-text {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* About Card */
+.about-card {
+  background: linear-gradient(145deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 15px 50px rgba(56, 189, 248, 0.2);
+}
+
+.section-heading {
+  font-family: 'Figtree', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin: 0 0 25px 0;
+  line-height: 1.3;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-content p {
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.highlight {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Two Column Section - Interests and Languages */
+.two-column-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  background: linear-gradient(145deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 15px 50px rgba(56, 189, 248, 0.2);
+}
+
+/* Interests Card - Grid Layout with Scale Animation */
+.info-card:nth-child(1):hover {
+  transform: translateY(-5px);
+}
+
+.info-card:nth-child(1) .info-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.info-card:nth-child(1) .info-item {
+  background: rgba(56, 189, 248, 0.05);
+  border: 2px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.info-card:nth-child(1) .info-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.4), rgba(56, 189, 248, 0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.info-card:nth-child(1) .info-item:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+}
+
+.info-card:nth-child(1) .info-item:hover::before {
+  opacity: 1;
+}
+
+.info-card:nth-child(1) .item-icon {
+  font-size: 30px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.info-card:nth-child(1) .item-text {
+  color: #38bdf8;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Languages Card - List Layout with Slide Animation */
+.info-card:nth-child(2):hover {
+  transform: translateY(-5px);
+}
+
+.info-card:nth-child(2) .info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-card:nth-child(2) .info-item {
+  background: rgba(56, 189, 248, 0.05);
+  border-left: 4px solid #38bdf8;
+  border-radius: 6px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.info-card:nth-child(2) .info-item::before {
+  content: '▸';
+  color: #38bdf8;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.info-card:nth-child(2) .info-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #38bdf8 0%, #0ea5e9 100%);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+  border-radius: 6px 0 0 6px;
+}
+
+.info-card:nth-child(2) .info-item:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-left-color: transparent;
+  transform: translateX(12px);
+  box-shadow: -4px 0 12px rgba(56, 189, 248, 0.3);
+}
+
+.info-card:nth-child(2) .info-item:hover::before {
+  transform: translateX(5px);
+}
+
+.info-card:nth-child(2) .info-item:hover::after {
+  transform: scaleY(1);
+}
+
+.info-card:nth-child(2) .item-text {
+  color: #7dd3fc;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-card:nth-child(2) .info-item:hover .item-text {
+  color: #38bdf8;
+}
+
+/* Common Styles */
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.info-icon {
+  font-size: 28px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.info-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 24px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin: 0;
+}
+
+.item-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.item-text {
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Section Header with Icon */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.section-icon {
+  font-size: 32px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Certifications Section */
+.certifications-section {
+  background: linear-gradient(145deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.certifications-section:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 15px 50px rgba(56, 189, 248, 0.2);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.cert-card {
+  background: rgba(56, 189, 248, 0.03);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 16px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9, #38bdf8);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+}
+
+.cert-card:hover {
+  background: rgba(56, 189, 248, 0.08);
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(56, 189, 248, 0.3);
+}
+
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+.cert-icon {
+  font-size: 48px;
+  text-align: center;
+  filter: drop-shadow(0 4px 8px rgba(56, 189, 248, 0.3));
+  animation: float 3s ease-in-out infinite;
+}
+
+.cert-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin: 0;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.cert-card:hover .cert-title {
+  color: #7dd3fc;
+}
+
+.cert-issuer {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0;
+  font-weight: 500;
+}
+
+.cert-date {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+  font-weight: 400;
+}
+
+.cert-badge {
+  font-family: 'Fira Code', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0a0e27;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  padding: 6px 14px;
+  border-radius: 20px;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-badge {
+  box-shadow: 0 6px 15px rgba(56, 189, 248, 0.5);
+  transform: scale(1.05);
+}
+
+.see-more-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.see-more-btn {
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border: 2px solid rgba(56, 189, 248, 0.3);
+  border-radius: 30px;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.see-more-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.3), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.see-more-btn:hover {
+  color: #ffffff;
+  background: rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+  transform: translateY(-2px);
+}
+
+.see-more-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.see-more-btn:active {
+  transform: translateY(0);
+}
+
+/* Education Section - Grid Layout */
+.education-section {
+  background: linear-gradient(145deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+.education-section:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 15px 50px rgba(56, 189, 248, 0.2);
+}
+
+.education-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.education-card {
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #38bdf8 0%, rgba(56, 189, 248, 0.3) 100%);
+}
+
+.education-card:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-5px);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 15px;
+}
+
+.education-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin: 0;
+}
+
+.education-badge {
+  font-family: 'Fira Code', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0a0e27;
+  background: #38bdf8;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.education-location {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  color: #facc15;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.education-description {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Experience Section - Timeline Layout */
+.experience-section {
+  background: linear-gradient(145deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.experience-section:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 15px 50px rgba(56, 189, 248, 0.2);
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #38bdf8 0%, rgba(56, 189, 248, 0.3) 100%);
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-item .timeline-dot {
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #38bdf8;
+  border: 3px solid #0a0e27;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+  z-index: 1;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.2);
+    transform: scale(1.1);
+  }
+}
+
+.experience-card {
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateX(10px);
+}
+
+.experience-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin: 0 0 8px 0;
+}
+
+.experience-period {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  color: #facc15;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.experience-description {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* Responsive Design */
+
+/* Extra Large Screens */
+@media (min-width: 1440px) {
+  .journey-page {
+    max-width: 1100px;
+  }
+}
+
+/* Large Desktops */
+@media (max-width: 1280px) {
+  .journey-page {
+    padding: 110px 50px 70px;
+  }
+
+  .certifications-grid {
+    gap: 18px;
+  }
+}
+
+/* Standard Laptops and Tablets Landscape */
+@media (max-width: 1024px) {
+  .journey-page {
+    padding: 100px 40px 60px;
+  }
+
+  .journey-title {
+    font-size: 48px;
+  }
+
+  .journey-subtitle {
+    font-size: 16px;
+  }
+
+  .terminal-card,
+  .about-card,
+  .info-card {
+    padding: 30px;
+  }
+
+  .certifications-grid {
+    gap: 16px;
+  }
+
+  .cert-card {
+    padding: 22px;
+  }
+}
+
+/* Tablets Portrait */
+@media (max-width: 768px) {
+  .journey-page {
+    padding: 90px 30px 50px;
+  }
+
+  .journey-header {
+    margin-bottom: 60px;
+  }
+
+  .journey-title {
+    font-size: 42px;
+  }
+
+  .journey-subtitle {
+    font-size: 16px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .two-column-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .terminal-card,
+  .about-card,
+  .info-card,
+  .experience-section,
+  .certifications-section,
+  .education-section {
+    padding: 30px 25px;
+  }
+
+  .terminal-body {
+    padding: 20px;
+  }
+
+  .section-icon {
+    font-size: 28px;
+  }
+
+  .experience-timeline {
+    padding-left: 32px;
+  }
+
+  .experience-item .timeline-dot {
+    left: -30px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .education-card,
+  .experience-card {
+    padding: 20px;
+  }
+
+  .education-title,
+  .experience-title {
+    font-size: 18px;
+  }
+
+  .cert-card {
+    padding: 22px;
+  }
+
+  .cert-icon {
+    font-size: 42px;
+  }
+
+  .cert-title {
+    font-size: 17px;
+  }
+}
+
+/* Large Mobile Phones */
+@media (max-width: 640px) {
+  .journey-page {
+    padding: 80px 25px 45px;
+  }
+
+  .journey-header {
+    margin-bottom: 50px;
+  }
+
+  .journey-title {
+    font-size: 36px;
+  }
+
+  .journey-subtitle {
+    font-size: 15px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+
+  .info-card {
+    padding: 25px 20px;
+  }
+
+  .info-title {
+    font-size: 20px;
+  }
+
+  .item-icon {
+    font-size: 20px;
+  }
+
+  .item-text {
+    font-size: 14px;
+  }
+
+  .experience-timeline {
+    padding-left: 30px;
+  }
+
+  .experience-item .timeline-dot {
+    left: -29px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .see-more-btn {
+    padding: 10px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-page {
+    padding: 70px 15px 30px;
+  }
+
+  .journey-title {
+    font-size: 32px;
+  }
+
+  .journey-subtitle {
+    font-size: 14px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .two-column-section {
+    gap: 15px;
+  }
+
+  .info-card {
+    padding: 20px 15px;
+  }
+
+  .info-title {
+    font-size: 18px;
+  }
+
+  .info-icon {
+    font-size: 24px;
+  }
+
+  .item-icon {
+    font-size: 18px;
+  }
+
+  .item-text {
+    font-size: 13px;
+  }
+
+  .certifications-grid {
+    gap: 15px;
+  }
+
+  .cert-card {
+    padding: 20px;
+  }
+
+  .cert-icon {
+    font-size: 36px;
+  }
+
+  .cert-title {
+    font-size: 16px;
+  }
+
+  .cert-issuer {
+    font-size: 13px;
+  }
+
+  .about-card,
+  .education-section,
+  .experience-section,
+  .certifications-section {
+    padding: 25px 20px;
+  }
+
+  .terminal-header {
+    padding: 10px 15px;
+  }
+
+  .terminal-body {
+    padding: 15px;
+  }
+
+  .terminal-command,
+  .output-text {
+    font-size: 13px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .section-icon {
+    font-size: 24px;
+  }
+
+  .experience-timeline {
+    padding-left: 25px;
+  }
+
+  .experience-timeline::before {
+    left: 8px;
+  }
+
+  .experience-item .timeline-dot {
+    left: -24px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #0a0e27;
+  }
+
+  .education-description,
+  .experience-description {
+    font-size: 13px;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .see-more-btn {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+
+  .see-more-container {
+    margin-top: 25px;
+  }
+}
+
+/* Very Small Phones */
+@media (max-width: 375px) {
+  .journey-page {
+    padding: 60px 12px 25px;
+  }
+
+  .journey-header {
+    margin-bottom: 40px;
+  }
+
+  .journey-title {
+    font-size: 28px;
+  }
+
+  .journey-subtitle {
+    font-size: 13px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+  }
+
+  .terminal-card,
+  .about-card,
+  .info-card,
+  .experience-section,
+  .certifications-section,
+  .education-section {
+    padding: 20px 15px;
+  }
+
+  .terminal-header {
+    padding: 8px 12px;
+  }
+
+  .terminal-title {
+    font-size: 12px;
+  }
+
+  .terminal-body {
+    padding: 12px;
+  }
+
+  .terminal-command,
+  .output-text {
+    font-size: 12px;
+  }
+
+  .about-content p {
+    font-size: 13px;
+  }
+
+  .info-title {
+    font-size: 17px;
+  }
+
+  .info-icon {
+    font-size: 22px;
+  }
+
+  .item-icon {
+    font-size: 16px;
+  }
+
+  .item-text {
+    font-size: 12px;
+  }
+
+  .cert-card {
+    padding: 18px 15px;
+  }
+
+  .cert-icon {
+    font-size: 32px;
+  }
+
+  .cert-title {
+    font-size: 15px;
+  }
+
+  .cert-issuer {
+    font-size: 12px;
+  }
+
+  .cert-date {
+    font-size: 11px;
+  }
+
+  .cert-badge {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+
+  .section-icon {
+    font-size: 22px;
+  }
+
+  .experience-timeline {
+    padding-left: 22px;
+  }
+
+  .experience-timeline::before {
+    left: 7px;
+  }
+
+  .experience-item .timeline-dot {
+    left: -22px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #0a0e27;
+  }
+
+  .education-card,
+  .experience-card {
+    padding: 18px 15px;
+  }
+
+  .education-title,
+  .experience-title {
+    font-size: 16px;
+  }
+
+  .education-location,
+  .experience-period {
+    font-size: 12px;
+  }
+
+  .education-description,
+  .experience-description {
+    font-size: 12px;
+  }
+
+  .education-badge {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .see-more-btn {
+    padding: 9px 20px;
+    font-size: 12px;
+  }
+
+  .see-more-container {
+    margin-top: 20px;
+  }
+}
+
