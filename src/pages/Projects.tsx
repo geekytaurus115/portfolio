@@ -4,6 +4,7 @@ import ragBasedAiAssistantImg from '../assets/images/rag_based_ai_assistant_img.
 import mailBotImg from '../assets/images/mailbot_img.png';
 import numberGuessingGameImg from '../assets/images/number_guessing_game_img.png';
 import flaskWeatherAppImg from '../assets/images/python_flask_weather_app.png';
+import omnifoodImg from '../assets/images/omnifood_img.png';
 import ProjectModal from '../components/ProjectModal';
 import './projects.css';
 
@@ -38,6 +39,14 @@ const projects = [
     image: numberGuessingGameImg,
     description: 'A fun Number Guessing Game built using HTML, CSS, and JavaScript where the user tries to guess a randomly generated number. The game provides hints and if the guessed number is too high or too low. And tracks the player score based on correct guesses.',
     github: 'https://github.com/geekytaurus115/html-css-js-projects/tree/main/JS-Projects/Guess-My-Number-Game',
+    category: 'Frontend'
+  },
+  { 
+    title: 'Omnifood', 
+    tech: 'HTML, CSS, JavaScript',
+    image: omnifoodImg,
+    description: 'This is a single page static food delivery responsive webpage using HTML, CSS and JavaScript.',
+    github: 'https://github.com/geekytaurus115/Omnifood',
     category: 'Frontend'
   },
 ];
