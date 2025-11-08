@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ragBasedAiAssistantImg from '../assets/images/rag_based_ai_assistant_img.png';
 import mailBotImg from '../assets/images/mailbot_img.png';
 import numberGuessingGameImg from '../assets/images/number_guessing_game_img.png';
+import flaskWeatherAppImg from '../assets/images/python_flask_weather_app.png';
 import ProjectModal from '../components/ProjectModal';
 import './projects.css';
 
@@ -21,6 +22,14 @@ const projects = [
     image: mailBotImg,
     description: 'MailBot is a Python-based automation script that connects Google Sheets with your email service to send personalized emails directly from a spreadsheet. It is perfect for sending updates, newsletters, or notifications - all controlled from an easy-to-edit Google Sheet.',
     github: 'https://github.com/geekytaurus115/gen-ai-projects/tree/main/MailBot',
+    category: 'Fullstack'
+  },
+  { 
+    title: 'Flask Weather App', 
+    tech: 'Python, Flask, SQLAlchemy, Bootstrap, requests, python-dotenv',
+    image: flaskWeatherAppImg,
+    description: 'This project is a simple weather dashboard that lets you look up real-time conditions for any city using the free OpenWeatherMap API. It stores recent searches in a SQLite database so you can quickly revisit previous lookups.',
+    github: 'https://github.com/geekytaurus115/python-flask-django/tree/main/flask_weather_app',
     category: 'Fullstack'
   },
   { 
