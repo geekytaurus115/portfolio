@@ -1,7 +1,5 @@
 # Geekytaurus - Portfolio
 
-A modern, fully-featured portfolio website built with React, TypeScript, and Framer Motion. 
-
 
 ## 🔗 Live Preview
 
