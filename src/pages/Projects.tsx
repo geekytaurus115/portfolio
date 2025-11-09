@@ -6,6 +6,7 @@ import numberGuessingGameImg from '../assets/images/number_guessing_game_img.png
 import flaskWeatherAppImg from '../assets/images/python_flask_weather_app.png';
 import omnifoodImg from '../assets/images/omnifood_img.png';
 import spamSmsClassifierImg from '../assets/images/spam_sms_classifier.png';
+import kmeansCustomerSegmentationImg from '../assets/images/kmeans_customer_segmentation.png';
 import ProjectModal from '../components/ProjectModal';
 import './projects.css';
 
@@ -24,6 +25,14 @@ const projects = [
     image: spamSmsClassifierImg,
     description: 'A machine learning mini-project that classifies SMS messages as Spam or Ham (Not Spam). It uses the SMS Spam Collection Dataset and applies CountVectorizer to convert text into numerical features, followed by a Logistic Regression model to accurately detect unwanted spam messages.',
     github: 'https://github.com/geekytaurus115/practical-data-science/tree/main/supervised_learning/spam_sms_classifier',
+    category: 'Data Science'
+  },
+  { 
+    title: 'KMeans - Customer Segmentation', 
+    tech: 'Python, Pandas, Scikit-learn, KMeans, Matplotlib, Joblib',
+    image: kmeansCustomerSegmentationImg,
+    description: 'This project demonstrates how to use unsupervised learning for customer segmentation, using the Mall Customers dataset.',
+    github: 'https://github.com/geekytaurus115/practical-data-science/tree/main/unsupervised_learning/kmeans_customer_segmentation',
     category: 'Data Science'
   },
   { 
