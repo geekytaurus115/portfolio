@@ -7,6 +7,7 @@ import flaskWeatherAppImg from '../assets/images/python_flask_weather_app.png';
 import omnifoodImg from '../assets/images/omnifood_img.png';
 import spamSmsClassifierImg from '../assets/images/spam_sms_classifier.png';
 import kmeansCustomerSegmentationImg from '../assets/images/kmeans_customer_segmentation.png';
+import gridQuestQLearningImg from '../assets/images/gridquest_qlearning.png';
 import ProjectModal from '../components/ProjectModal';
 import './projects.css';
 
@@ -33,6 +34,14 @@ const projects = [
     image: kmeansCustomerSegmentationImg,
     description: 'This project demonstrates how to use unsupervised learning for customer segmentation, using the Mall Customers dataset.',
     github: 'https://github.com/geekytaurus115/practical-data-science/tree/main/unsupervised_learning/kmeans_customer_segmentation',
+    category: 'Data Science'
+  },
+  { 
+    title: 'GridQuest: Q-Learning Agent', 
+    tech: 'Python, Flask, NumPy, Q-Learning, HTML, CSS',
+    image: gridQuestQLearningImg,
+    description: 'An agent learns to navigate a 5x5 grid world using Q-learning, aiming to reach a goal while maximizing rewards. The trained Q-table enables policy visualization and further testing.',
+    github: 'https://github.com/geekytaurus115/practical-data-science/tree/main/reinforcement_learning/gridquest_qlearning_agent',
     category: 'Data Science'
   },
   { 
