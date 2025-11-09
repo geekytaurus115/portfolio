@@ -5,6 +5,7 @@ import mailBotImg from '../assets/images/mailbot_img.png';
 import numberGuessingGameImg from '../assets/images/number_guessing_game_img.png';
 import flaskWeatherAppImg from '../assets/images/python_flask_weather_app.png';
 import omnifoodImg from '../assets/images/omnifood_img.png';
+import spamSmsClassifierImg from '../assets/images/spam_sms_classifier.png';
 import ProjectModal from '../components/ProjectModal';
 import './projects.css';
 
@@ -15,6 +16,14 @@ const projects = [
     image: ragBasedAiAssistantImg,
     description: 'A Retrieval-Augmented Generation (RAG) system that creates an intelligent Q&A assistant from your YouTube video collection. The system downloads videos, transcribes them, creates vector embeddings, and enables semantic search to answer questions about video content with precise timestamps.',
     github: 'https://github.com/geekytaurus115/rag-based-ai-assistant',
+    category: 'Data Science'
+  },
+  { 
+    title: 'SMS Spam Detection', 
+    tech: 'Python, Pandas, Scikit-learn, LogisticRegression',
+    image: spamSmsClassifierImg,
+    description: 'A machine learning mini-project that classifies SMS messages as Spam or Ham (Not Spam). It uses the SMS Spam Collection Dataset and applies CountVectorizer to convert text into numerical features, followed by a Logistic Regression model to accurately detect unwanted spam messages.',
+    github: 'https://github.com/geekytaurus115/practical-data-science/tree/main/supervised_learning/spam_sms_classifier',
     category: 'Data Science'
   },
   { 
