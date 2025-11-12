@@ -8,6 +8,7 @@ import omnifoodImg from '../assets/images/omnifood_img.png';
 import spamSmsClassifierImg from '../assets/images/spam_sms_classifier.png';
 import kmeansCustomerSegmentationImg from '../assets/images/kmeans_customer_segmentation.png';
 import gridQuestQLearningImg from '../assets/images/gridquest_qlearning.png';
+import passwordGeneratorImg from '../assets/images/python_password_generator.png';
 import ProjectModal from '../components/ProjectModal';
 import './projects.css';
 
@@ -76,6 +77,14 @@ const projects = [
     github: 'https://github.com/geekytaurus115/Omnifood',
     category: 'Frontend'
   },
+  {
+    title: 'Password Generator',
+    tech: 'Python, Flask, HTML, CSS',
+    image: passwordGeneratorImg,
+    description: 'This is a minimal Flask app that generates secure passwords with a cool UI.',
+    github: 'https://github.com/geekytaurus115/python-flask-django/tree/main/python_password_generator',
+    category: 'Fullstack'
+  }
 ];
 
 const containerVariants = {
